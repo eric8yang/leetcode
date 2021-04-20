@@ -18,5 +18,4 @@ class Solution:
                 mini = min(mini, nums[j + 1])
                 j = j + 1
         return score
-            
         
