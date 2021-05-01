@@ -1,4 +1,4 @@
-#why is this 50/50 worst problem on leetcode ever
+#why is this 50/50 worst problem on leetcode
 class Solution(object):
     def nthPersonGetsNthSeat(self, n):
         """
