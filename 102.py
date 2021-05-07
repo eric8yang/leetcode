@@ -1,4 +1,4 @@
-#pretty good solution, but rip streak :(
+#pretty good solution, but not that complicated
 
 # Definition for a binary tree node.
 # class TreeNode:
