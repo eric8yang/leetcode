@@ -1,10 +1,10 @@
 #got some inspiration from discord group, but this was good practice of some new python techniques
 class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
+    def addOperators(self, num: str, target: int):
         arr = [(0, int(num[0]), int(num[0]), num[0])] #sum, mult, last mult, expression
         res = []
         for i in num[1:]:
-            n = int(i)
+            n = int(i
             newArr = []
             for (currSum, currMult, lastMult, exp) in arr:
                 newArr.append((currSum + currMult, n, n, exp + f"+{i}"))
