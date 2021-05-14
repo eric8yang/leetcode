@@ -4,7 +4,7 @@ class Solution:
         arr = [(0, int(num[0]), int(num[0]), num[0])] #sum, mult, last mult, expression
         res = []
         for i in num[1:]:
-            n = int(i
+            n = int(i)
             newArr = []
             for (currSum, currMult, lastMult, exp) in arr:
                 newArr.append((currSum + currMult, n, n, exp + f"+{i}"))
