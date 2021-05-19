@@ -1,6 +1,6 @@
 #seems wrong but it got accepted
 class Solution:
-    def maximumGap(self, nums) -> int:
+    def maximumGap(self, nums):
         if len(nums) < 2:
             return 0
         from sortedcontainers import SortedSet
