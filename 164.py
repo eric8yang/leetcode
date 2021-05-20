@@ -1,17 +1,11 @@
 #seems wrong but it got accepted
 class Solution:
     def maximumGap(self, nums):
-        if len(nums) < 2:
+        if len(nums) == 1:
             return 0
-        from sortedcontainers import SortedSet
-        s = SortedSet([])
-        for i in nums:
-            s.add(i)
+        nums.sort()
         diff = 0
-        prev = s[0]
-        for i in s[1:]:
-            temp = i - prev
-            diff = temp if temp > diff else diff
-            prev = i
+        for i in range(1, len(nums)):
+            diff = max(diff, nums[i] - nums[i - 1])
         return diff
         
